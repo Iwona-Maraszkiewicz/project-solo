@@ -108,8 +108,8 @@
         </div>
         <div class="form-outside">
           <form class="form">
-            <input class="form-date" type="date">
-            <input class="form-date" type="date">
+            <input class="form-date date-1" type="date">
+            <input class="form-date date-2" type="date">
             <a href="#" class="btn btn-refresh"><img src="images/refresh.svg" class="icon-refresh" alt="refresh"></a>
             <button type="submit">Submit</button>
           </form>
@@ -142,6 +142,7 @@
           <div class="chart-title">
             <h5>Earnings chart</h5>
           </div>
+          <canvas id="myChart"></canvas>
       <!--    <div class="chart" style="position: relative;"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
             <canvas id="myChart" width="890" height="388" style="display: block; height: 311px; width: 712px;"></canvas>
           </div> -->
@@ -150,6 +151,7 @@
     </div>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>

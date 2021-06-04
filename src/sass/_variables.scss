@@ -212,13 +212,17 @@ body {
   filter: invert(55%) sepia(1%) saturate(0%) hue-rotate(80deg) brightness(92%) contrast(82%);
 }
 
+.top-menu .top-links .link-one a:hover {
+  filter: invert(61%) sepia(22%) saturate(2202%) hue-rotate(1deg) brightness(104%) contrast(103%);
+}
+
 .top-menu .top-links .link-one * {
   margin-right: 20px;
 }
 
-a {
+/*a {
   background-color: transparent;
-}
+}*/
 
 .top-menu .top-links .link-one img {
   height: 15px;
@@ -318,7 +322,7 @@ img {
   background-color: transparent;
   border-radius: 3px;
   border: 1.5px solid #e3e3e3;
-  margin: 0;
+  //margin: 0;
   height: 40px;
 }
 
@@ -344,10 +348,14 @@ button, input, optgroup, select, textarea {
   color: #ffffff;
   border-radius: 3px;
   padding: 0 10px;
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 35px;
+  min-width: 35px;
   text-decoration: none;
   margin-left: 10px;
+}
+
+.btn:hover {
+  background: $button-hover-color;
 }
 
 img.icon-refresh {
@@ -370,8 +378,8 @@ img.icon-refresh {
   display: flex;
   width: 50%;
   height: 100%;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  //-ms-flex-direction: row;
+  // flex-direction: row;
   margin-top: 30px;
 }
 
@@ -403,7 +411,78 @@ img.icon-refresh {
   margin: 0;
 }
 
+.row:hover {
+  background: #dcdde1;
+  cursor: pointer;
+}
+
 .amount {
   color: $sidebar-color;
   font-weight: 400;
+}
+
+
+@media (max-width: 767px) {
+  .form-date {
+    width: 50%;
+    height: 30%;
+  }
+
+  .date-1 {
+    margin-right: 50px;
+  }
+
+  .form-outside {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+  }
+
+  .form-outside .form-date:first-of-type {
+    margin-bottom: 5px;
+    border-right: 1.5px solid #e3e3e3;
+  }
+
+  .row {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .table-container {
+    width: 100%;
+  }
+
+  .table-container-row {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .amount {
+    margin-right: -130px;
+  }
+
+  .chart-wrapper {
+    margin-top: 100px;
+  }
+
+  .row:hover {
+    background: #dcdde1;
+    cursor: pointer;
+  }
+
+
 }
