@@ -48,6 +48,10 @@ body {
   z-index: 5;
 }
 
+.sidebar-inter {
+  margin-bottom: 15px;
+}
+
 .logo-text {
   display: flex;
   color: $section-color;
@@ -129,8 +133,8 @@ body {
 }
 
 .manager-text h4 {
-  margin-right: 50px;
-  font-size: 15px;
+  margin-right: 18px;
+  font-size: 14px;
 }
 
 .photo {
@@ -161,6 +165,10 @@ body {
   color: #56819F;
   margin-left: 50px;
   font-size: 15px;
+}
+
+.name a:hover {
+  color: #04AE00;
 }
 
 /*Topbar*/
@@ -504,6 +512,7 @@ img.icon-refresh {
 
   .page .container {
     margin-top: 20px;
+    margin-left: 62px;
   }
 
   /*rwd topbar to sidebar*/
@@ -514,7 +523,7 @@ img.icon-refresh {
 
   .rwd-line {
     border-top: 1px solid $font-color;
-    margin: 60px 0px 30px 0px;
+    margin: 60px 0px 18px 0px;
   }
 
   /*hamburger*/
@@ -545,5 +554,16 @@ img.icon-refresh {
 
   .line-third {
     margin: 5px 0px 0px 0px;
+  }
+
+  .sidebar-outside {
+    position: fixed;
+    left: 0;
+    transition: 0.5s ease;
+    transform: translateX(-150px);
+  }
+
+  .show {
+    transform: translateX(0px);
   }
 }
